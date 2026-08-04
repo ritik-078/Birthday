@@ -26,7 +26,6 @@ window.BIRTHDAY_CONFIG = {
   wrongPasswordMessages: [
     "Nope! But you're still the cutest person trying 💚",
     "Wrong one, sprout. Try again — I believe in you 🥦",
-    "So close! My heart says try once more 💗",
     "That's not it… but I'd unlock every door for you anyway 🔓",
   ],
 
@@ -73,48 +72,48 @@ window.BIRTHDAY_CONFIG = {
      `stage` (1–5) picks how grown the broccoli looks on that card.
      ========================================================== */
 
-  journeyTitle: "How We Grew",
-  journeySubtitle: "From one shy little seed to a whole leafy forest of us.",
+  // journeyTitle: "How We Grew",
+  // journeySubtitle: "From one shy little seed to a whole leafy forest of us.",
 
-  journeySteps: [
-    {
-      stage: 1,
-      label: "The Seed",
-      title: "The day I noticed you",
-      text: "You laughed at something that wasn't even funny, and I thought: oh no. Oh no, this is going to matter.",
-    },
-    {
-      stage: 2,
-      label: "The Sprout",
-      title: "Our first real conversation",
-      text: "Three hours felt like eleven minutes. I went home and grinned at my ceiling like an absolute fool.",
-    },
-    {
-      stage: 3,
-      label: "The Leaves",
-      title: "The inside jokes era",
-      text: "Now we have a secret language nobody else speaks. Nine words and one look and we're both crying with laughter.",
-    },
-    {
-      stage: 4,
-      label: "The Bloom",
-      title: "The hard week you stayed",
-      text: "You didn't try to fix me. You just sat there and refused to leave. That's when I knew this was the real thing.",
-    },
-    {
-      stage: 5,
-      label: "The Whole Tree",
-      title: "Today, and everything after",
-      text: "Look how tall we got. And honestly? I think we're still just getting started, my favorite veggie.",
-    },
-  ],
+  // journeySteps: [
+  //   {
+  //     stage: 1,
+  //     label: "The Seed",
+  //     title: "The day I noticed you",
+  //     text: "You laughed at something that wasn't even funny, and I thought: oh no. Oh no, this is going to matter.",
+  //   },
+  //   {
+  //     stage: 2,
+  //     label: "The Sprout",
+  //     title: "Our first real conversation",
+  //     text: "Three hours felt like eleven minutes. I went home and grinned at my ceiling like an absolute fool.",
+  //   },
+  //   {
+  //     stage: 3,
+  //     label: "The Leaves",
+  //     title: "The inside jokes era",
+  //     text: "Now we have a secret language nobody else speaks. Nine words and one look and we're both crying with laughter.",
+  //   },
+  //   {
+  //     stage: 4,
+  //     label: "The Bloom",
+  //     title: "The hard week you stayed",
+  //     text: "You didn't try to fix me. You just sat there and refused to leave. That's when I knew this was the real thing.",
+  //   },
+  //   {
+  //     stage: 5,
+  //     label: "The Whole Tree",
+  //     title: "Today, and everything after",
+  //     text: "Look how tall we got. And honestly? I think we're still just getting started, my favorite veggie.",
+  //   },
+  // ],
 
   /* ==========================================================
      6. THE PUN GENERATOR
      ========================================================== */
 
   punSectionTitle: "Poke the Broccoli",
-  punSectionSubtitle: "Warning: contains dangerously high levels of affection.",
+  punSectionSubtitle: "",
   punButtonLabel: "Tap me again 🥦",
 
   broccoliPuns: [
@@ -139,7 +138,7 @@ window.BIRTHDAY_CONFIG = {
 
   musicUrl: "assets/song.mp3",
   musicVolume: 0.35, // 0 = silent, 1 = full blast
-  musicTitle: "Our song",
+  musicTitle: "",
 
   // Try to start the music the instant they unlock the page.
   // (Unlocking is a real click, so browsers usually allow it. If they block
@@ -150,9 +149,9 @@ window.BIRTHDAY_CONFIG = {
      8. FINALE + LITTLE THINGS
      ========================================================== */
 
-  finaleHeading: "Happy birthday, my little green miracle.",
-  finaleText: "Now go be adorable. I'll be right here, watering us.",
-  footerNote: "Made with far too much love (and a suspicious amount of broccoli).",
+  // finaleHeading: "Happy birthday, my little green miracle.",
+  // finaleText: "Now go be adorable. I'll be right here, watering us.",
+  // footerNote: "Made with far too much love (and a suspicious amount of broccoli).",
 
   // Emojis used for the floating background elements.
   floatingEmojis: ["💚", "🥦", "💗", "🌿", "🤍", "🥦", "💕", "🌱"],
