@@ -136,7 +136,7 @@ window.BIRTHDAY_CONFIG = {
      Leave it as "" and the audio button politely hides itself.
      ========================================================== */
 
-  musicUrl: "assets/song.mp3",
+  musicUrl: "song.mp3",
   musicVolume: 0.4, // 0 = silent, 1 = full blast
   musicTitle: "",
 
