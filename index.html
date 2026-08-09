@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="theme-color" content="#143520" />
-<meta name="description" content="A tiny handmade corner of the internet, built for one very specific person." />
-<meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#143520" />
+    <meta name="description" content="A tiny handmade corner of the internet, built for one very specific person." />
+    <meta name="robots" content="noindex, nofollow" />
 
-<title>A Special Delivery 💚</title>
+    <title>A Special Delivery 💚</title>
 
-<!-- ============================================================
-     FAVICON — swap the emoji below for anything you like
-     ============================================================ -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥦</text></svg>" />
+    <!-- ============================================================
+         FAVICON — swap the emoji below for anything you like
+         ============================================================ -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥦</text></svg>" />
 
-<!-- ============================================================
-     GOOGLE FONTS
-     Great Vibes = romantic script | Baloo 2 = playful headings
-     Quicksand   = clean, readable body text
-     ============================================================ -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- ============================================================
+         GOOGLE FONTS
+         Great Vibes = romantic script | Baloo 2 = playful headings
+         Quicksand   = clean, readable body text
+         ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -43,59 +43,59 @@
      SECTION 1 — GATEKEEPER OVERLAY (the lock screen)
      ============================================================ -->
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
-  <div class="gate__glow" aria-hidden="true"></div>
+    <div class="gate__glow" aria-hidden="true"></div>
 
-  <div class="gate__card">
-    <div class="gate__lock" aria-hidden="true">
-      <!-- Cute padlock with a broccoli-green body -->
-      <svg viewBox="0 0 64 64" class="lock-svg">
-        <path class="lock-svg__shackle" d="M20 28v-7a12 12 0 0 1 24 0v7" fill="none" stroke-width="5" stroke-linecap="round" />
-        <rect class="lock-svg__body" x="12" y="27" width="40" height="30" rx="9" />
-        <circle class="lock-svg__hole" cx="32" cy="40" r="4" />
-        <path class="lock-svg__hole" d="M32 42.5v6" stroke-width="3.4" stroke-linecap="round" fill="none" />
-      </svg>
+    <div class="gate__card">
+        <div class="gate__lock" aria-hidden="true">
+            <!-- Cute padlock with a broccoli-green body -->
+            <svg viewBox="0 0 64 64" class="lock-svg">
+                <path class="lock-svg__shackle" d="M20 28v-7a12 12 0 0 1 24 0v7" fill="none" stroke-width="5" stroke-linecap="round" />
+                <rect class="lock-svg__body" x="12" y="27" width="40" height="30" rx="9" />
+                <circle class="lock-svg__hole" cx="32" cy="40" r="4" />
+                <path class="lock-svg__hole" d="M32 42.5v6" stroke-width="3.4" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+
+        <p class="gate__eyebrow">A Special Delivery</p>
+        <!-- <h1 class="gate__title" id="gate-title">For My Favorite Person…</h1> -->
+        <p class="gate__sub">This little garden is locked. But you already know the key. 🥦</p>
+
+        <form class="gate__form" id="gate-form" novalidate>
+            <div class="field" id="gate-field">
+                <label class="field__label" for="gate-input">Secret password</label>
+                <div class="field__wrap">
+                    <input
+                            class="field__input"
+                            id="gate-input"
+                            name="password"
+                            type="password"
+                            inputmode="text"
+                            autocomplete="off"
+                            autocapitalize="off"
+                            autocorrect="off"
+                            spellcheck="false"
+                            placeholder="whisper it here…"
+                            aria-describedby="gate-hint gate-error"
+                            required
+                    />
+                    <button class="field__peek" type="button" id="gate-peek" aria-label="Show password" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.8-6.5 10-6.5S22 12 22 12s-3.8 6.5-10 6.5S2 12 2 12Z" fill="none" stroke-width="1.8"/><circle cx="12" cy="12" r="2.9" fill="none" stroke-width="1.8"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn btn--primary gate__submit" type="submit">
+                <span>Unlock my surprise</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <!-- Playful error message lands here -->
+            <p class="gate__error" id="gate-error" role="alert" aria-live="assertive"></p>
+            <p class="gate__hint" id="gate-hint"></p>
+        </form>
     </div>
 
-    <p class="gate__eyebrow">A Special Delivery</p>
-    <!-- <h1 class="gate__title" id="gate-title">For My Favorite Person…</h1> -->
-    <p class="gate__sub">This little garden is locked. But you already know the key. 🥦</p>
-
-    <form class="gate__form" id="gate-form" novalidate>
-      <div class="field" id="gate-field">
-        <label class="field__label" for="gate-input">Secret password</label>
-        <div class="field__wrap">
-          <input
-            class="field__input"
-            id="gate-input"
-            name="password"
-            type="password"
-            inputmode="text"
-            autocomplete="off"
-            autocapitalize="off"
-            autocorrect="off"
-            spellcheck="false"
-            placeholder="whisper it here…"
-            aria-describedby="gate-hint gate-error"
-            required
-          />
-          <button class="field__peek" type="button" id="gate-peek" aria-label="Show password" aria-pressed="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.8-6.5 10-6.5S22 12 22 12s-3.8 6.5-10 6.5S2 12 2 12Z" fill="none" stroke-width="1.8"/><circle cx="12" cy="12" r="2.9" fill="none" stroke-width="1.8"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <button class="btn btn--primary gate__submit" type="submit">
-        <span>Unlock my surprise</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-
-      <!-- Playful error message lands here -->
-      <p class="gate__error" id="gate-error" role="alert" aria-live="assertive"></p>
-      <p class="gate__hint" id="gate-hint"></p>
-    </form>
-  </div>
-
-  <p class="gate__foot">Handmade, offline, and only for you. No servers, no snooping. 💚</p>
+    <p class="gate__foot">Handmade, offline, and only for you. No servers, no snooping. 💚</p>
 </div>
 
 
@@ -104,229 +104,228 @@
      ============================================================ -->
 <main class="app" id="app" hidden>
 
-  <!-- ==========================================================
-       SECTION 2 — HERO + LIVE "JOY" COUNTER
-       ========================================================== -->
-  <section class="hero" id="hero">
-    <div class="hero__leaves" aria-hidden="true">
-      <span class="hero__leaf hero__leaf--a">🌿</span>
-      <span class="hero__leaf hero__leaf--b">🌿</span>
-    </div>
-
-    <div class="shell hero__inner">
-      <p class="hero__eyebrow reveal">Today the whole world gets a day off, because it's</p>
-
-      <h1 class="hero__title reveal">
-        <span class="hero__happy">Happy Birthday,</span>
-        <span class="hero__name" id="hero-name">Friend</span>
-      </h1>
-
-      <p class="hero__nickname reveal" id="hero-nickname">My Favorite Veggie</p>
-      <p class="hero__tagline reveal" id="hero-tagline"></p>
-
-      <!-- Little cute broccoli mascot waving under the title -->
-      <div class="hero__mascot reveal" aria-hidden="true">
-        <svg viewBox="0 0 200 210" class="broc broc--sm">
-          <use href="#broccoli-friend" />
-        </svg>
-      </div>
-
-      <!-- <div class="counter reveal" aria-labelledby="counter-label">
-        <p class="counter__label" id="counter-label">You have been bringing joy into my life for</p>
-
-        <div class="counter__grid" id="counter-grid">
-          <div class="counter__cell"><span class="counter__num" id="c-days">0</span><span class="counter__unit">days</span></div>
-          <div class="counter__cell"><span class="counter__num" id="c-hours">0</span><span class="counter__unit">hours</span></div>
-          <div class="counter__cell"><span class="counter__num" id="c-mins">0</span><span class="counter__unit">minutes</span></div>
-          <div class="counter__cell counter__cell--accent"><span class="counter__num" id="c-secs">0</span><span class="counter__unit">seconds</span></div>
+    <!-- ==========================================================
+         SECTION 2 — HERO + LIVE "JOY" COUNTER
+         ========================================================== -->
+    <section class="hero" id="hero">
+        <div class="hero__leaves" aria-hidden="true">
+            <span class="hero__leaf hero__leaf--a">🌿</span>
+            <span class="hero__leaf hero__leaf--b">🌿</span>
         </div>
 
-        <p class="counter__total" id="counter-total" aria-live="off"></p>
-        <p class="counter__note" id="special-date-text"></p>
-      </div> -->
-    </div>
+        <div class="shell hero__inner">
+            <p class="hero__eyebrow reveal">Today the whole world gets a day off, because it's</p>
 
-    <!-- <a class="scroll-cue" href="#journey" aria-label="Scroll to our story">
-      <span>our story</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v13m0 0-6-6m6 6 6-6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a> -->
-  </section>
+            <h1 class="hero__title reveal">
+                <span class="hero__happy">Happy Birthday</span>
+            </h1>
 
+            <p class="hero__nickname reveal" id="hero-nickname">My Favorite Veggie</p>
+            <p class="hero__tagline reveal" id="hero-tagline"></p>
 
-  <!-- <!-- ==========================================================
-       SECTION 3 — THE GROWTH JOURNEY (interactive card deck)
-       ========================================================== -->
-  <section class="journey" id="journey">
-    <div class="shell">
-      <header class="sec-head reveal">
-        <p class="sec-head__eyebrow">Chapter one</p>
-        <h2 class="sec-head__title" id="journey-title">How We Grew</h2>
-        <p class="sec-head__sub" id="journey-sub"></p>
-      </header>
+            <!-- Little cute broccoli mascot waving under the title -->
+            <div class="hero__mascot reveal" aria-hidden="true">
+                <svg viewBox="0 0 200 210" class="broc broc--sm">
+                    <use href="#broccoli-friend" />
+                </svg>
+            </div>
 
-      <div class="growth reveal">
+             <div class="counter reveal" aria-labelledby="counter-label">
+              <p class="counter__label" id="counter-label">You have been bringing joy into my life for</p>
 
-        <!-- LEFT: the plant that grows as you click Next -->
-        <div class="growth__plant">
-          <svg viewBox="0 0 260 280" class="plant" id="plant" role="img" aria-labelledby="plant-alt">
-            <title id="plant-alt">A broccoli plant that grows as our story progresses</title>
+              <div class="counter__grid" id="counter-grid">
+                <div class="counter__cell"><span class="counter__num" id="c-days">0</span><span class="counter__unit">days</span></div>
+                <div class="counter__cell"><span class="counter__num" id="c-hours">0</span><span class="counter__unit">hours</span></div>
+                <div class="counter__cell"><span class="counter__num" id="c-mins">0</span><span class="counter__unit">minutes</span></div>
+                <div class="counter__cell counter__cell--accent"><span class="counter__num" id="c-secs">0</span><span class="counter__unit">seconds</span></div>
+              </div>
 
-            <!-- soil -->
-            <ellipse class="plant__soil" cx="130" cy="248" rx="86" ry="17" />
-            <ellipse class="plant__soil-top" cx="130" cy="244" rx="70" ry="12" />
-            <g class="plant__dirt">
-              <circle cx="96" cy="243" r="2.6" /><circle cx="120" cy="249" r="2" />
-              <circle cx="160" cy="242" r="2.4" /><circle cx="146" cy="250" r="1.8" />
-            </g>
-
-            <!-- stage 1: the seed -->
-            <g class="plant__part plant__seed" data-from="1" data-only="1">
-              <ellipse cx="130" cy="236" rx="9" ry="7" />
-              <path d="M126 234c2-2 6-2 8 0" fill="none" stroke-width="1.6" stroke-linecap="round" />
-            </g>
-
-            <!-- the stalk (scales up with each stage) -->
-            <g class="plant__stem" id="plant-stem">
-              <path d="M123 244 C 121 200, 121 160, 130 120 C 139 160, 139 200, 137 244 Z" />
-            </g>
-
-            <!-- leaf pairs, revealed one stage at a time -->
-            <g class="plant__part plant__leaf" data-from="2">
-              <use href="#leaf" transform="translate(126 214) rotate(-14) scale(0.66)" />
-              <use href="#leaf" transform="translate(134 214) rotate(14) scale(-0.66 0.66)" />
-            </g>
-            <g class="plant__part plant__leaf" data-from="3">
-              <use href="#leaf" transform="translate(124 184) rotate(-22) scale(0.86)" />
-              <use href="#leaf" transform="translate(136 184) rotate(22) scale(-0.86 0.86)" />
-            </g>
-            <g class="plant__part plant__leaf" data-from="4">
-              <use href="#leaf" transform="translate(123 156) rotate(-30) scale(1)" />
-              <use href="#leaf" transform="translate(137 156) rotate(30) scale(-1 1)" />
-            </g>
-
-            <!-- the crown of florets -->
-            <g class="plant__part plant__crown" data-from="4" id="plant-crown">
-              <circle cx="100" cy="104" r="24" /><circle cx="160" cy="104" r="24" />
-              <circle cx="130" cy="118" r="26" /><circle cx="113" cy="84"  r="22" />
-              <circle cx="148" cy="84"  r="22" /><circle cx="130" cy="70"  r="20" />
-              <circle class="plant__floret-hi" cx="112" cy="82" r="7" />
-              <circle class="plant__floret-hi" cx="145" cy="97" r="5" />
-            </g>
-
-            <!-- final flourish -->
-            <g class="plant__part plant__sparks" data-from="5">
-              <path d="M56 96l3.4 8.6L68 108l-8.6 3.4L56 120l-3.4-8.6L44 108l8.6-3.4Z" />
-              <path d="M206 130l2.8 7 7 2.8-7 2.8-2.8 7-2.8-7-7-2.8 7-2.8Z" />
-              <path d="M186 62l2.2 5.6 5.6 2.2-5.6 2.2-2.2 5.6-2.2-5.6-5.6-2.2 5.6-2.2Z" />
-            </g>
-          </svg>
-
-          <p class="growth__stage-label" id="stage-label" aria-live="polite">The Seed</p>
+              <p class="counter__total" id="counter-total" aria-live="off"></p>
+              <p class="counter__note" id="special-date-text"></p>
+            </div> 
         </div>
 
-        <!-- RIGHT: the card deck -->
-        <div class="growth__deck">
-          <div class="progress" role="group" aria-label="Story progress">
-            <div class="progress__bar"><span class="progress__fill" id="progress-fill"></span></div>
-            <div class="progress__dots" id="progress-dots"></div>
-          </div>
+        <a class="scroll-cue" href="#journey" aria-label="Scroll to our story">
+          <span>our story</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v13m0 0-6-6m6 6 6-6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a> 
+    </section>
 
-          <article class="card" id="card" aria-live="polite">
-            <p class="card__step" id="card-step">Step 1</p>
-            <h3 class="card__title" id="card-title"></h3>
-            <p class="card__text" id="card-text"></p>
-            <span class="card__sprig" aria-hidden="true">🥦</span>
-          </article>
 
-          <div class="deck-nav">
-            <button class="btn btn--ghost" id="btn-prev" type="button">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M19 12H6m0 0 5.5-5.5M6 12l5.5 5.5" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Back</span>
-            </button>
-            <button class="btn btn--primary" id="btn-next" type="button">
-              <span id="btn-next-label">Next</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
+    <!-- ==========================================================
+         SECTION 3 — THE GROWTH JOURNEY (interactive card deck)
+         ========================================================== -->
+    <section class="journey" id="journey">
+        <div class="shell">
+            <header class="sec-head reveal">
+                <p class="sec-head__eyebrow">Chapter one</p>
+                <h2 class="sec-head__title" id="journey-title">How We Grew</h2>
+                <p class="sec-head__sub" id="journey-sub"></p>
+            </header>
+
+            <div class="growth reveal">
+
+                <!-- LEFT: the plant that grows as you click Next -->
+                <div class="growth__plant">
+                    <svg viewBox="0 0 260 280" class="plant" id="plant" role="img" aria-labelledby="plant-alt">
+                        <title id="plant-alt">A broccoli plant that grows as our story progresses</title>
+
+                        <!-- soil -->
+                        <ellipse class="plant__soil" cx="130" cy="248" rx="86" ry="17" />
+                        <ellipse class="plant__soil-top" cx="130" cy="244" rx="70" ry="12" />
+                        <g class="plant__dirt">
+                            <circle cx="96" cy="243" r="2.6" /><circle cx="120" cy="249" r="2" />
+                            <circle cx="160" cy="242" r="2.4" /><circle cx="146" cy="250" r="1.8" />
+                        </g>
+
+                        <!-- stage 1: the seed -->
+                        <g class="plant__part plant__seed" data-from="1" data-only="1">
+                            <ellipse cx="130" cy="236" rx="9" ry="7" />
+                            <path d="M126 234c2-2 6-2 8 0" fill="none" stroke-width="1.6" stroke-linecap="round" />
+                        </g>
+
+                        <!-- the stalk (scales up with each stage) -->
+                        <g class="plant__stem" id="plant-stem">
+                            <path d="M123 244 C 121 200, 121 160, 130 120 C 139 160, 139 200, 137 244 Z" />
+                        </g>
+
+                        <!-- leaf pairs, revealed one stage at a time -->
+                        <g class="plant__part plant__leaf" data-from="2">
+                            <use href="#leaf" transform="translate(126 214) rotate(-14) scale(0.66)" />
+                            <use href="#leaf" transform="translate(134 214) rotate(14) scale(-0.66 0.66)" />
+                        </g>
+                        <g class="plant__part plant__leaf" data-from="3">
+                            <use href="#leaf" transform="translate(124 184) rotate(-22) scale(0.86)" />
+                            <use href="#leaf" transform="translate(136 184) rotate(22) scale(-0.86 0.86)" />
+                        </g>
+                        <g class="plant__part plant__leaf" data-from="4">
+                            <use href="#leaf" transform="translate(123 156) rotate(-30) scale(1)" />
+                            <use href="#leaf" transform="translate(137 156) rotate(30) scale(-1 1)" />
+                        </g>
+
+                        <!-- the crown of florets -->
+                        <g class="plant__part plant__crown" data-from="4" id="plant-crown">
+                            <circle cx="100" cy="104" r="24" /><circle cx="160" cy="104" r="24" />
+                            <circle cx="130" cy="118" r="26" /><circle cx="113" cy="84"  r="22" />
+                            <circle cx="148" cy="84"  r="22" /><circle cx="130" cy="70"  r="20" />
+                            <circle class="plant__floret-hi" cx="112" cy="82" r="7" />
+                            <circle class="plant__floret-hi" cx="145" cy="97" r="5" />
+                        </g>
+
+                        <!-- final flourish -->
+                        <g class="plant__part plant__sparks" data-from="5">
+                            <path d="M56 96l3.4 8.6L68 108l-8.6 3.4L56 120l-3.4-8.6L44 108l8.6-3.4Z" />
+                            <path d="M206 130l2.8 7 7 2.8-7 2.8-2.8 7-2.8-7-7-2.8 7-2.8Z" />
+                            <path d="M186 62l2.2 5.6 5.6 2.2-5.6 2.2-2.2 5.6-2.2-5.6-5.6-2.2 5.6-2.2Z" />
+                        </g>
+                    </svg>
+
+                    <p class="growth__stage-label" id="stage-label" aria-live="polite">The Seed</p>
+                </div>
+
+                <!-- RIGHT: the card deck -->
+                <div class="growth__deck">
+                    <div class="progress" role="group" aria-label="Story progress">
+                        <div class="progress__bar"><span class="progress__fill" id="progress-fill"></span></div>
+                        <div class="progress__dots" id="progress-dots"></div>
+                    </div>
+
+                    <article class="card" id="card" aria-live="polite">
+                        <p class="card__step" id="card-step">Step 1</p>
+                        <h3 class="card__title" id="card-title"></h3>
+                        <p class="card__text" id="card-text"></p>
+                        <span class="card__sprig" aria-hidden="true">🥦</span>
+                    </article>
+
+                    <div class="deck-nav">
+                        <button class="btn btn--ghost" id="btn-prev" type="button">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M19 12H6m0 0 5.5-5.5M6 12l5.5 5.5" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Back</span>
+                        </button>
+                        <button class="btn btn--primary" id="btn-next" type="button">
+                            <span id="btn-next-label">Next</span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ==========================================================
-       SECTION 4 — THE LOVE LETTER
-       ========================================================== -->
-  <section class="letter-sec" id="letter">
-    <div class="shell">
-      <header class="sec-head reveal">
-        <p class="sec-head__eyebrow">Chapter two</p>
-        <h2 class="sec-head__title">A Letter, Because Words Are All I Have</h2>
-      </header>
+    <!-- ==========================================================
+         SECTION 4 — THE LOVE LETTER
+         ========================================================== -->
+    <section class="letter-sec" id="letter">
+        <div class="shell">
+            <header class="sec-head reveal">
+                <p class="sec-head__eyebrow">Chapter two</p>
+                <h2 class="sec-head__title">A Letter, Because Words Are All I Have</h2>
+            </header>
 
-      <div class="letter reveal">
-        <div class="letter__tape letter__tape--l" aria-hidden="true"></div>
-        <div class="letter__tape letter__tape--r" aria-hidden="true"></div>
+            <div class="letter reveal">
+                <div class="letter__tape letter__tape--l" aria-hidden="true"></div>
+                <div class="letter__tape letter__tape--r" aria-hidden="true"></div>
 
-        <div class="letter__body" id="letter-body"></div>
+                <div class="letter__body" id="letter-body"></div>
 
-        <p class="letter__sign">
-          <span id="letter-signature"></span>
-          <strong id="letter-signature-name"></strong>
-        </p>
-      </div>
-    </div>
-  </section> -->
-
-
-  <!-- ==========================================================
-       SECTION 5 — THE PUN GENERATOR
-       ========================================================== -->
-  <section class="puns" id="puns">
-    <div class="shell">
-      <header class="sec-head reveal">
-        <p class="sec-head__eyebrow">Chapter three</p>
-        <h2 class="sec-head__title" id="pun-title">Poke the Broccoli</h2>
-        <p class="sec-head__sub" id="pun-sub"></p>
-      </header>
-
-      <div class="pun-box reveal">
-        <!-- The clickable mascot. Replace the <use> with an <img> if you
-             prefer your own artwork:  <img src="assets/broccoli.png" alt="" /> -->
-        <button class="pun-broc" id="pun-broc" type="button" aria-describedby="pun-out">
-          <svg viewBox="0 0 200 210" class="broc" aria-hidden="true">
-            <use href="#broccoli-friend" />
-          </svg>
-          <span class="pun-broc__ring" aria-hidden="true"></span>
-          <span class="sr-only">Tap the broccoli for a new pun</span>
-        </button>
-
-        <output class="pun-out" id="pun-out" aria-live="polite">
-          Go on… give me a little tap. 👆
-        </output>
-
-        <button class="btn btn--soft" id="pun-btn" type="button">
-          <span id="pun-btn-label">Tap me again 🥦</span>
-        </button>
-
-        <p class="pun-count" id="pun-count" aria-live="off"></p>
-      </div>
-    </div>
-  </section>
+                <p class="letter__sign">
+                    <span id="letter-signature"></span>
+                    <strong id="letter-signature-name"></strong>
+                </p>
+            </div>
+        </div>
+    </section> -->
 
 
-  <!-- ==========================================================
-       SECTION 6 — FINALE
-       ========================================================== -->
-  <footer class="finale" id="finale">
-    <div class="shell finale__inner">
-      <div class="finale__hearts" aria-hidden="true">💚 🥦 💗</div>
-      <h2 class="finale__title reveal" id="finale-heading"></h2>
-      <p class="finale__text reveal" id="finale-text"></p>
-      <p class="finale__note reveal" id="footer-note"></p>
-    </div>
-  </footer>
+    <!-- ==========================================================
+         SECTION 5 — THE PUN GENERATOR
+         ========================================================== -->
+    <section class="puns" id="puns">
+        <div class="shell">
+            <header class="sec-head reveal">
+                <p class="sec-head__eyebrow">Chapter three</p>
+                <h2 class="sec-head__title" id="pun-title">Poke the Broccoli</h2>
+                <p class="sec-head__sub" id="pun-sub"></p>
+            </header>
+
+            <div class="pun-box reveal">
+                <!-- The clickable mascot. Replace the <use> with an <img> if you
+                     prefer your own artwork:  <img src="assets/broccoli.png" alt="" /> -->
+                <button class="pun-broc" id="pun-broc" type="button" aria-describedby="pun-out">
+                    <svg viewBox="0 0 200 210" class="broc" aria-hidden="true">
+                        <use href="#broccoli-friend" />
+                    </svg>
+                    <span class="pun-broc__ring" aria-hidden="true"></span>
+                    <span class="sr-only">Tap the broccoli for a new pun</span>
+                </button>
+
+                <output class="pun-out" id="pun-out" aria-live="polite">
+                    Go on… give me a little tap. 👆
+                </output>
+
+                <button class="btn btn--soft" id="pun-btn" type="button">
+                    <span id="pun-btn-label">Tap me again 🥦</span>
+                </button>
+
+                <p class="pun-count" id="pun-count" aria-live="off"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         SECTION 6 — FINALE
+         ========================================================== -->
+    <footer class="finale" id="finale">
+        <div class="shell finale__inner">
+            <div class="finale__hearts" aria-hidden="true">💚 🥦 💗</div>
+            <h2 class="finale__title reveal" id="finale-heading"></h2>
+            <p class="finale__text reveal" id="finale-text"></p>
+            <p class="finale__note reveal" id="footer-note"></p>
+        </div>
+    </footer>
 
 </main>
 
@@ -337,9 +336,9 @@
      ============================================================ -->
 <button class="audio-fab" id="audio-fab" type="button" aria-pressed="false" hidden
         aria-label="Play background music" title="Play background music">
-  <span class="audio-fab__eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-  <svg class="audio-fab__icon audio-fab__icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
-  <svg class="audio-fab__icon audio-fab__icon--pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.5"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.5"/></svg>
+    <span class="audio-fab__eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <svg class="audio-fab__icon audio-fab__icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+    <svg class="audio-fab__icon audio-fab__icon--pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.5"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.5"/></svg>
 </button>
 
 <!-- Tiny toast for audio messages -->
@@ -355,41 +354,41 @@
      illustrations from a file / URL.
      ============================================================ -->
 <svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
-  <defs>
-    <!-- a single leaf, drawn pointing right from its origin -->
-    <g id="leaf">
-      <path class="leaf__blade" d="M0 0C16-20 48-24 62-6 48 14 16 18 0 0Z" />
-      <path class="leaf__rib" d="M3 0C18-4 40-8 58-7" fill="none" stroke-width="2" stroke-linecap="round" />
-    </g>
+    <defs>
+        <!-- a single leaf, drawn pointing right from its origin -->
+        <g id="leaf">
+            <path class="leaf__blade" d="M0 0C16-20 48-24 62-6 48 14 16 18 0 0Z" />
+            <path class="leaf__rib" d="M3 0C18-4 40-8 58-7" fill="none" stroke-width="2" stroke-linecap="round" />
+        </g>
 
-    <!-- the cute broccoli mascot with a little face -->
-    <g id="broccoli-friend">
-      <!-- side leaves -->
-      <path class="bf-leaf" d="M62 150c-22 4-36-6-40-20 16-8 34-4 44 8Z" />
-      <path class="bf-leaf" d="M138 150c22 4 36-6 40-20-16-8-34-4-44 8Z" />
-      <!-- stalk -->
-      <path class="bf-stalk" d="M74 96h52c6 0 9 5 8 11l-8 74c-1 10-9 17-19 17h-14c-10 0-18-7-19-17l-8-74c-1-6 2-11 8-11Z" />
-      <!-- floret crown -->
-      <g class="bf-crown">
-        <circle cx="62"  cy="76" r="27" /><circle cx="138" cy="76" r="27" />
-        <circle cx="100" cy="92" r="30" /><circle cx="78"  cy="50" r="25" />
-        <circle cx="122" cy="50" r="25" /><circle cx="100" cy="34" r="23" />
-      </g>
-      <!-- crown highlights -->
-      <g class="bf-hi">
-        <circle cx="76" cy="46" r="8" /><circle cx="118" cy="62" r="5.5" />
-        <circle cx="96" cy="30" r="6" />
-      </g>
-      <!-- face -->
-      <g class="bf-face">
-        <ellipse class="bf-eye" cx="88"  cy="135" rx="5" ry="6" />
-        <ellipse class="bf-eye" cx="112" cy="135" rx="5" ry="6" />
-        <circle class="bf-blush" cx="76"  cy="148" r="7" />
-        <circle class="bf-blush" cx="124" cy="148" r="7" />
-        <path class="bf-smile" d="M92 149c3 4 13 4 16 0" fill="none" stroke-width="3.2" stroke-linecap="round" />
-      </g>
-    </g>
-  </defs>
+        <!-- the cute broccoli mascot with a little face -->
+        <g id="broccoli-friend">
+            <!-- side leaves -->
+            <path class="bf-leaf" d="M62 150c-22 4-36-6-40-20 16-8 34-4 44 8Z" />
+            <path class="bf-leaf" d="M138 150c22 4 36-6 40-20-16-8-34-4-44 8Z" />
+            <!-- stalk -->
+            <path class="bf-stalk" d="M74 96h52c6 0 9 5 8 11l-8 74c-1 10-9 17-19 17h-14c-10 0-18-7-19-17l-8-74c-1-6 2-11 8-11Z" />
+            <!-- floret crown -->
+            <g class="bf-crown">
+                <circle cx="62"  cy="76" r="27" /><circle cx="138" cy="76" r="27" />
+                <circle cx="100" cy="92" r="30" /><circle cx="78"  cy="50" r="25" />
+                <circle cx="122" cy="50" r="25" /><circle cx="100" cy="34" r="23" />
+            </g>
+            <!-- crown highlights -->
+            <g class="bf-hi">
+                <circle cx="76" cy="46" r="8" /><circle cx="118" cy="62" r="5.5" />
+                <circle cx="96" cy="30" r="6" />
+            </g>
+            <!-- face -->
+            <g class="bf-face">
+                <ellipse class="bf-eye" cx="88"  cy="135" rx="5" ry="6" />
+                <ellipse class="bf-eye" cx="112" cy="135" rx="5" ry="6" />
+                <circle class="bf-blush" cx="76"  cy="148" r="7" />
+                <circle class="bf-blush" cx="124" cy="148" r="7" />
+                <path class="bf-smile" d="M92 149c3 4 13 4 16 0" fill="none" stroke-width="3.2" stroke-linecap="round" />
+            </g>
+        </g>
+    </defs>
 </svg>
 
 
