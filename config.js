@@ -48,7 +48,7 @@ window.BIRTHDAY_CONFIG = {
      ========================================================== */
 
   // Use \n\n to break paragraphs. Emojis welcome.
-  mainRomanticMessage: `Happy birthday, Vaishnavi !!!`,
+  mainRomanticMessage: `Happy Birthday! 🎂 Wishing you a day as sweet, bright, and wonderful as you are! 💖`,
 
   // Signed at the bottom of the letter.
   letterSignature: "From 🥊",
@@ -154,5 +154,5 @@ window.BIRTHDAY_CONFIG = {
   // footerNote: "Made with far too much love (and a suspicious amount of broccoli).",
 
   // Emojis used for the floating background elements.
-  floatingEmojis: ["💚", "🥦", "💗", "🌿", "🤍", "🥦", "💕", "🌱"],
+  floatingEmojis: ["💚", "🥦", "💗", "🤍", "🥦", "💕", "💖"],
 };
