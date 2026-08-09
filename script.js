@@ -682,12 +682,7 @@
 
       Confetti.burstFrom(broc, 80);
 
-      tally++;
-      if (count) {
-        count.textContent = tally === 1
-          ? "1 pun delivered. No regrets. 🥦"
-          : tally + " puns delivered. Still not sorry. 🥦";
-      }
+   
     }
 
     broc.addEventListener("click", fire);
