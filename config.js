@@ -117,12 +117,12 @@ window.BIRTHDAY_CONFIG = {
   punButtonLabel: "Tap me again 🥦",
 
   broccoliPuns: [
-    "I'm totally stalks-ing you — romantically, of course.",
-    "You look healthy AND beautiful today. Devastating combo.",
-    "I love you from my head to-ma-toes, but mostly broccoli-loads.",
-    "You're the only one who makes my heart floret.",
-    "Lettuce be honest: I'd pick you from the whole garden. Every time.",
-    "We're a perfect pear — but greener and way cuter.",
+    "Are you a birthday candle? Because you absolutely light up my entire world.",
+    "Lettuce celebrate the most important day of the year: the day you were born.",
+    "Why do we put candles on top of birthday cakes? Because it's way too hard to light them from the bottom!",
+    "What goes up but never comes back down? Your age! (But you still look incredible).",
+    "Why did the birthday cake go to the doctor? Because it was feeling a little crummy.",
+    "What does a clam do on its birthday? It shell-ebrates!",
   ],
 
   /* ==========================================================
@@ -137,7 +137,7 @@ window.BIRTHDAY_CONFIG = {
      ========================================================== */
 
   musicUrl: "assets/song.mp3",
-  musicVolume: 0.35, // 0 = silent, 1 = full blast
+  musicVolume: 0.4, // 0 = silent, 1 = full blast
   musicTitle: "",
 
   // Try to start the music the instant they unlock the page.
